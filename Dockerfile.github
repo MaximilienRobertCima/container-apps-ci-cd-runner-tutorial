@@ -10,6 +10,5 @@ RUN apt-get update && apt-get install -y curl jq && \
 
 COPY github-actions-runner/entrypoint.sh ./entrypoint.sh
 RUN chmod +x ./entrypoint.sh
-    export RUNNER_ALLOW_RUNASROOT="1"
 
 ENTRYPOINT ["./entrypoint.sh"]
